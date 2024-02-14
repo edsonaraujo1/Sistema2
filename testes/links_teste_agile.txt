@@ -1,0 +1,4 @@
+ http://189.19.215.201:8080/SWAGILEAMPR/servlet/com.swinf.sgs.aswap_sgs_integracao_caixa?modulo=CONTRIBUICAO&servico=CALCULAR&usuario=TOLLER&senha=wz342y&numero=3507901&base=15000&funcionarios=15 
+ http://189.19.215.201:8080/SWAGILEAMPR/servlet/com.swinf.sgs.aswap_sgs_integracao_caixa?modulo=CONTRIBUICAO&servico=PAGARPORCAIXA&usuario=TOLLER&senha=wz342y&numero=3507901&valor=150.00 
+ http://189.19.215.201:8080/SWAGILEAMPR/servlet/com.swinf.sgs.aswap_sgs_integracao_caixa?modulo=CONTRIBUICAO&servico=CANCELARPAGAMENTOPORCAIXA&usuario=TOLLER&senha=wz342y&numero=3507901 
+

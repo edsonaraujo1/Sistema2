@@ -1,0 +1,1 @@
+<font face=verdana size=1>(12:46:57)</font> <font face=verdana size=2 color=>loard</font> <font face=verdana size=2>entra na sala...</font><br><font face=verdana size=1>(12:47:03)</font> <b><font face=verdana size=2 color=>loard</font></b> <font face=verdana size=2>sai da sala...</font><br>

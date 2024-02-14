@@ -1,0 +1,145 @@
+body { background-image: url(<?=$logo_sis;?>);
+       background-attachment: fixed }
+
+<!--.cp {  font: bold 10px Arial; color: black}
+<!--.ti {  font: 9px Arial, Helvetica, sans-serif}
+<!--.ld { font: bold 15px Arial; color: #000000}
+<!--.ct { FONT: 9px "Arial Narrow"; COLOR: #000033}
+<!--.cn { FONT: 9px Arial; COLOR: black }
+<!--.bc { font: bold 22px Arial; color: #000000 }
+-->
+
+    A:link,a:active,a:visited{ color:white; text-decoration:none; }
+    A:hover{ color:#FF3333; text-decoration:none; }
+	A:visited {color:#0000cc;}
+	A:active {color:#0000cc;}
+	
+	A.clase1:visited {color:#000000;}
+	A.clase1:active {color:#000000;} 
+	A.clase1:link {color:#000000}
+	A.clase1:hover {color:#FFFFFF}
+
+ iframe#footer{
+  position:absolute;
+  bottom:0px;
+  left:auto;
+  width:98%;
+  height:<length>;
+  
+ }
+
+/* 
+Regra 1 - Classe que define as propriedades da barra horizontal
+*/
+ul.menubar{
+  margin: 0px;
+  padding: 0px;
+  background-color: #FFFFFF; /* IE6 Bug */
+}
+/* 
+Regra 2 - Classe que define o formato e a posiçao dos submenus (um ao lado do outro)
+*/ 
+ul.menubar .submenu{
+  margin: 2px;
+  padding: 0px;
+  list-style: none;
+  background-color: #FFFFFF;
+  border: 1px solid #ccc;
+  float:left; 
+}
+/* 
+Regra 3 - Classe que define a posiçao e a exibiçao dos menus verticais (inicialmente eles nao sao exibidos)
+*/  
+ul.menubar ul.menu{
+  display: none;
+  position: absolute;
+  margin: 0px;
+}
+/* 
+Regra 4 - Classe que define a aparencia do link da barra horizontal
+*/  
+ul.menubar a{
+  padding: 5px;
+  display:block;
+  text-decoration: none;
+  padding: 5px;
+}
+/* 
+Regra 5 - Classe que define o tamanho e a cor do menu vertical
+*/ 
+ul.menu, ul.menu ul{
+  margin: 0;
+  padding: 0;
+  border-bottom: 1px solid #ccc;
+  width: 150px; 
+  background-color: #FFFFFF; /* IE6 Bug */
+} 
+/* 
+Regra 6 - Classe que define o posicionamento dos itens do menu vertical relativos ao submenu
+*/  
+ul.menu li{
+  position: relative;
+  list-style:none;
+  border: 0px;
+}
+/* 
+Regra 7 - Classe que define a aparencia dos links dos itens do menu vertical
+*/  
+ul.menu li a{
+  display: block;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-bottom: 0px;
+  padding: 5px 10px 5px 5px;
+}
+/* 
+Regra 8 - Classe que define o posicionamento do menu vertical
+*/   
+ul.menu ul{
+  position: absolute;
+  display: none;
+  left: 149px; /* Definir 1px menor que o tamannho do menu */
+  top: 0px; 
+}
+/* 
+Regra 9 - Classe que define o tamanho e a posiçao do 3o nível de menus
+*/ 
+ul.menu li.submenu {
+  width: 150px; 
+  position: relative; 
+  list-style:none; 
+  border: 0px; 
+  float:none;  
+  z-index: 1000; /* IE7 Bug */
+}
+/* 
+Regra 10 - Classe que define a aparencia dos links do 3o nível de menus
+*/ 
+ul.menu li.submenu a {
+  display: block;
+  text-decoration: none;
+  border: 1px solid #ccc;
+  border-bottom: 0px;
+  padding: 5px 10px 5px 5px;
+}
+
+/* Fixar IE. Invisível para IE Mac \*/
+* html ul.menu li { float: left; height: 1%; } /* Regra 11 */
+* html ul.menu li a { height: 1%; } /* Regra 12 */
+* html ul.menu li.submenu { float: none; height: 1%; } /* Regra 13 */
+* html ul.menu li.submenu a { height: 1%; } /* Regra 14 */
+/* Fim */
+
+/* 
+Regra 15 - Classe que torna os sub-menus invisíveis inicialmente
+*/ 
+ul.menu li.submenu ul { display: none; } 
+/* 
+Regra 16 - Classe que insere a imagem da seta para a direita no menu vertical
+*/  
+ul.menu li.submenu {
+  background-color: transparent;
+  background-image: url(../img/seta_dir.gif);
+  background-repeat: no-repeat;
+  background-position: 93% 50%;
+}

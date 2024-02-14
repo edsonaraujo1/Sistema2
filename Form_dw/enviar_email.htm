@@ -1,0 +1,135 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Guias Email</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+<style type="text/css">
+<!--
+.style1 {
+	font-family: Arial;
+	font-weight: bold;
+	font-size: 18px;
+}
+.style3 {
+	color: #6699FF;
+	font-size: 21px;
+}
+.style4 {font-size: 16px}
+.style6 {font-family: Arial; font-weight: bold; font-size: 14px; }
+.style7 {
+	font-size: 23px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+-->
+</style>
+</head>
+
+<body>
+<table width="436" height="202" border="15" align="center" cellspacing="0" bordercolor="#6699FF">
+  <tr>
+    <td valign="top"><div align="center">
+      <table width="100%" border="1" cellspacing="0" bordercolor="#6699FF">
+	  <form method="post"  action="exemplos.php">
+        <tr>
+          <td height="38" valign="top"><div align="left">
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td height="34"><span class="style1"><span class="style3"><img src="../../novo/graphics/px1.gif" width="9" height="1"><span class="style7">Enviar Guias E-Mail</span></span> <span class="style4">(Recolhimento)</span></span></td>
+              </tr>
+            </table>
+            </div></td>
+        </tr>
+        <tr>
+          <td height="244" align="center" valign="top"><table width="100%" border="0">
+            <tr>
+              <td width="53%"><div align="left"><span class="style6">Enviar e-mail Para: </span></div></td>
+              <td width="47%"><div align="left">
+                <select type="text" name="Edit1" value="">
+				
+				            <option value="<?=$Edit1;?>"> <?=$Edit1;?> </option>
+            				<option value="EDIFICIOS">      EDIFICIOS   </option>
+            				<option value="ADMINISTRADORA"> ADMINISTRADORA </option>
+				
+				</select>
+              </div></td>
+              </tr>
+            <tr>
+              <td><div align="left"><span class="style6">Tipo de Contribui&ccedil;&atilde;o: </span></div></td>
+              <td><div align="left">
+                <select type="text" name="Edit2" value="" >
+				
+							<option value=" ">  </option>
+            				<option value="SINDICAL">      SINDICAL   </option>
+            				<option value="CONFEDERATIVA"> CONFEDERATIVA </option>
+            				<option value="ASSISTENCIAL"> ASSISTENCIAL </option>
+				
+				</select>
+
+              </div></td>
+              </tr>
+            <tr>
+              <td><div align="left"><span class="style6">Vencimento.: </span></div></td>
+              <td>                <div align="left">
+                  <input name="Edit32" type="text" size="13" >
+				</div></td>
+              </tr>
+            <tr>
+              <td align="left"><div align="left"><span class="style6">Instru&ccedil;&atilde;o da Guia.:</span></div></td>
+              <td align="left"><div align="left">
+</div>
+              <div align="left">                <select type="text" name="select" value="<?=$Edit2;?>" onchange="Salva_email_2(this)">
+				
+				            <option value=" ">  </option>
+							<option value="1">	1</option>
+							<option value="2">  2 </option>
+                            <option value="3">  3</option>
+                            <option value="4">  4</option>
+                            <option value="5">  5</option>
+                            <option value="6">  6</option>
+                            <option value="7">  7</option>
+
+                </select>
+              </div></td>
+            </tr>
+            <tr>
+              <td align="left"><span class="style6">Entre com o Codigo.:</span></td>
+              <td align="left"><input name="Edit3" type="text" size="10">
+                <a href="javascript:janelaSecundaria4('edifconsulta.php')"><img src="../sindical_email/imagens/lupa.PNG" width="17" height="18" border="0"></a></td>
+            </tr>
+            <tr>
+              <td align="left"><span class="style6">Usar e-mail do Cadastro?</span></td>
+              <td align="left"><select type="text" name="select2" value="" >
+			  
+			  				<option value=" ">  </option>
+							<option value="SIM"> SIM  </option>
+							<option value="NAO"> NAO  </option>
+
+              </select></td>
+            </tr>
+          </table>
+            <table width="100%" border="0">
+              <tr>
+                <td><div align="left"><span class="style6">Digite o E-mail</span></div></td>
+              </tr>
+              <tr>
+                <td><input name="Edit5" type="text" onchange="Salva_email_5(this)" size="65"></td>
+              </tr>
+              <tr>
+                <td><div align="left"><span class="style6">Enviar para.: </span></div></td>
+              </tr>
+            </table>
+            <br>            <br>
+			<input type=image name="guias" src="../sindical_email/imagens/botaoazul_enviar.PNG" width="92" height="22">
+			<img src="../../novo/graphics/px1.gif" width="10" height="1">
+            <a href='<?="../index.php";?>'><img src="../sindical_email/imagens/botaoazul33.PNG" width="92" height="22" border="0"></a><br>
+            <img src="../../novo/graphics/px1.gif" width="10" height="12"></td>
+        </tr>
+		</form>
+      </table>
+    </div></td>
+  </tr>
+</table>
+<div align="center"></div>
+</body>
+</html>

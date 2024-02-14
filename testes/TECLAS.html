@@ -1,0 +1,21 @@
+<html>
+<head>
+<script language="javascript">
+<!--
+
+function exemplo()
+{
+var tecla = window.event.keyCode;
+window.status = "Você pressionou a tecla: " + String.fromCharCode(tecla);
+alert("O Código da tecla pressionada é: " + tecla);
+
+}
+
+
+//-->
+</script>
+</head>
+<body onkeydown='return exemplo();' onkeyup='return exemplo();'>
+<p align="center">Obtendo o Código da tecla pressionada::.</p>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<?php
+
+/**
+ * @author Holodek
+ * @copyright 2009
+ */
+?>
+
+mudar campo saldo e pago para decimal de 19,2 
+incluir um novo campo na tabela de fotos com o nome de 'copd' varch = 8 not null

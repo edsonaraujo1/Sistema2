@@ -1,0 +1,2 @@
+drwxr-xr-x    2 fenatecb   fenatecb         4096 Apr  6 15:59 .
+drwxr-xr-x    3 fenatecb   fenatecb         4096 Apr  6 15:59 ..

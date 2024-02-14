@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>PopUp Calendar</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style type="text/css">
+<!--
+.bodytext {  font-family: Verdana, Arial, sans-serif; font-size: 10pt}
+.textfield {  font-family: Verdana, Arial, sans-serif; font-size: 10pt}
+.header {  font-family: Verdana, Arial, sans-serif; font-size: 10pt; font-weight: bold}
+.footnote {  font-family: "MS Sans Serif", sans-serif; font-size: 10pt}
+.code {  font-family: "Courier New", Courier, mono; font-size: 10pt; font-weight: bold}
+a:hover {  color: #FF0000; text-decoration: underline overline}
+a:link {  color: #0000FF; text-decoration: underline}
+a:visited {  color: #0000FF; text-decoration: underline}
+.highlight {  color: #FF0000; font-family: Verdana, Arial, sans-serif; font-size: 10pt}
+-->
+</style>
+<script language="JavaScript" src="pupdate.js"></script>
+</head>
+
+<body bgcolor="#FFFFFF">
+ <tr> 
+	<td> 
+	 <form name="sample">
+		 <p>Data: 
+		 <input type="text" name="choice4" size="16" maxlength="10" style="height:25px;width:93px;" class="textfield"/>
+		 <img src="Calendar.ico" width="16" height="16" vspace="0" hspace="2" border="0" onMouseUp="getCalendarFor(document.sample.choice4)"><br/>		 
+		 Data  :<input type="text" name="choice5" size="16" maxlength="10" style="height:25px;width:93px;" onFocus="getCalendarFor(this)" class="textfield" >
+</p>
+	 </form>
+	</td>
+ </tr>
+<!-- PopUp Calendar BEGIN -->
+<script language="JavaScript">
+if (document.all) {
+ document.writeln("<div id=\"PopUpCalendar\" style=\"position:absolute; left:0px; top:0px; z-index:7; width:200px; height:77px; overflow: visible; visibility: hidden; background-color: #FFFFFF; border: 1px none #000000\" onMouseOver=\"if(ppcTI){clearTimeout(ppcTI);ppcTI=false;}\" onMouseOut=\"ppcTI=setTimeout(\'hideCalendar()\',500)\">");
+ document.writeln("<div id=\"monthSelector\" style=\"position:absolute; left:0px; top:0px; z-index:9; width:181px; height:27px; overflow: visible; visibility:inherit\">");}
+else if (document.layers) {
+ document.writeln("<layer id=\"PopUpCalendar\" pagex=\"0\" pagey=\"0\" width=\"200\" height=\"200\" z-index=\"100\" visibility=\"hide\" bgcolor=\"#FFFFFF\" onMouseOver=\"if(ppcTI){clearTimeout(ppcTI);ppcTI=false;}\" onMouseOut=\"ppcTI=setTimeout('hideCalendar()',500)\">");
+ document.writeln("<layer id=\"monthSelector\" left=\"0\" top=\"0\" width=\"181\" height=\"27\" z-index=\"9\" visibility=\"inherit\">");}
+else {
+ document.writeln("<p><font color=\"#FF0000\"><b>Erro! O navegador atual seja muito velho ou muito moderno (usind DOM document structure).</b></font></p>");}
+</script>
+<noscript>
+<p><font color="#FF0000"><b>Javascript está desactivado!</b></font></p>
+</noscript>
+<table border="1" cellspacing="1" cellpadding="2" width="200" bordercolorlight="#000000" bordercolordark="#000000" vspace="0" hspace="0">
+<form name="ppcMonthList">
+<tr>
+<td align="center" bgcolor="#87CEFA">
+<a href="javascript:moveMonth('Back')" onMouseOver="window.status=' ';return true;">
+<font face="Arial, Helvetica, sans-serif" size="2" color="#000000"><b>&lt;&nbsp;</b></font></a>
+<font face="MS Sans Serif, sans-serif" size="1"> 
+<select name="sItem" onMouseOut="if(ppcIE){window.event.cancelBubble = true;}" onChange="switchMonth(this.options[this.selectedIndex].value)" style="font-family: 'MS Sans Serif', sans-serif; font-size: 9pt">
+<option value="0" selected>2000 &#149; Janeiro</option>
+<option value="1">2000 &#149; Fevereiro</option>
+<option value="2">2000 &#149; Março</option>
+<option value="3">2000 &#149; Abril</option>
+<option value="4">2000 &#149; Maio</option>
+<option value="5">2000 &#149; Junho</option>
+<option value="6">2000 &#149; Julho</option>
+<option value="7">2000 &#149; Agosto</option>
+<option value="8">2000 &#149; Setembro</option>
+<option value="9">2000 &#149; Outubro</option>
+<option value="10">2000 &#149; Novembro</option>
+<option value="11">2000 &#149; Dezembro</option>
+<option value="0">2001 &#149; Janeiro</option>
+</select></font>
+<a href="javascript:moveMonth('Forward')" onMouseOver="window.status=' ';return true;"><font face="Arial, Helvetica, sans-serif" size="2" color="#000000"><b>&nbsp;&gt;</b></font></a>
+</td>
+</tr>
+</form>
+</table>
+<table border="1" cellspacing="1" cellpadding="2" bordercolorlight="#000000" bordercolordark="#000000" width="200" vspace="0" hspace="0">
+<tr align="center" bgcolor="#87CEFA">
+<td width="20" bgcolor="#FFFFCC"><b><font face="MS Sans Serif, sans-serif" size="1">Dom</font></b></td>
+<td width="20"><b><font face="MS Sans Serif, sans-serif" size="1">Se</font></b></td>
+<td width="20"><b><font face="MS Sans Serif, sans-serif" size="1">Te</font></b></td>
+<td width="20"><b><font face="MS Sans Serif, sans-serif" size="1">Qu</font></b></td>
+<td width="20"><b><font face="MS Sans Serif, sans-serif" size="1">Qu</font></b></td>
+<td width="20"><b><font face="MS Sans Serif, sans-serif" size="1">Se</font></b></td>
+<td width="20"><b><font face="MS Sans Serif, sans-serif" size="1">Sa</font></b></td>
+</tr>
+</table>
+<script language="JavaScript">
+if (document.all) {
+ document.writeln("</div>");
+ document.writeln("<div id=\"monthDays\" style=\"position:absolute; left:0px; top:52px; z-index:8; width:200px; height:17px; overflow: visible; visibility:inherit; background-color: #FFFFFF; border: 1px none #000000\">&nbsp;</div></div>");}
+else if (document.layers) {
+ document.writeln("</layer>");
+ document.writeln("<layer id=\"monthDays\" left=\"0\" top=\"52\" width=\"200\" height=\"17\" z-index=\"8\" bgcolor=\"#FFFFFF\" visibility=\"inherit\">&nbsp;</layer></layer>");}
+else {/*NOP*/}
+</script>
+<!-- PopUp Calendar END -->
+</body>
+</html>

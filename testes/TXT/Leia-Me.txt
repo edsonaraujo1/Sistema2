@@ -1,0 +1,21 @@
+######################## Mini Sistema de Background de Alteração de BackGround de Site - PHP e Banco TXT ################
+
+O Objetivo do sistema é mostrar o funcionamento de salvar informações em TXT ao inves de banco de dados.
+Ele altera o background de seu site seja como uma imagem ou pela cor.
+Ele tambêm alem de javascript vem um modulo de upload da Imagem.
+Não vou pedir para que mantenham os copyright, sei que ninguem respeita isso, fica por conta de vocês a honestidade.
+
+Obrigado a Todos,
+Rafael Silva
+
+###################################################
+Este sistema foi desenvolvido pela RL System.
+####################################################
+
+
+###################################
+Informações:
+email: rafael@rlsystem.com.br
+msn: rafael@rlsystem.com.br
+www.rlsystem.com.br
+###################################

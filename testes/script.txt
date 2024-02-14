@@ -1,0 +1,15 @@
+window.onload = function(){ 
+ 
+  var fs = document.forms; 
+ 
+  for(var x=0, y=fs.length; x<y; x++){ 
+        els = fs[x].elements; 
+        for(var z=0, a=els.length; z<a;z++){ 
+          if(els[z].addEventListener){ 
+                els[z].addEventListener('focus',função,false); 
+          }else{ 
+                els[z].attachEvent('onfocus',função); 
+          } 
+        } 
+  } 
+}

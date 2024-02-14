@@ -1,0 +1,45 @@
+<?
+/*
+ -----------------------------------------
+ Desenvolvido por...: Edson de Araujo
+ Finalidade.........: Index do Sistema
+ Criado em Data.....: 07/12/2007
+ Ultima Atualização : 07/12/2007 
+
+ DEUS SEJA LOUVADO
+ -----------------------------------------
+*/
+?>
+<script>
+
+Mensagem = "Sindificios - Sindicato dos Empreg. de Edif. de São Paulo";
+Espacos = "..... .....";
+Posicao = 0;
+
+function RolaMensagem()
+{
+    window.status = Mensagem.substring(Posicao, Mensagem.length)
++ Espacos + Mensagem.substring(0, Posicao);     Posicao ++;
+
+   if (Posicao > Mensagem.length) Posicao = 0; 
+
+    window.setTimeout("RolaMensagem()", 200);
+}
+RolaMensagem();
+</script>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<TITLE>Sindificios - Sind. Empreg. Edif. SP</TITLE>
+</head>
+<frameset rows="100%,*" frameborder="NO">
+<frame noresize src="index.php" frameborder="NO" name="main_Frame">
+<frame noresize src="" frameborder="NO">
+</frameset>
+<noframes> 
+<body bgcolor="#FFFFFF" text="#000000">
+<p align="center">Seu navegador não suporta frames.</p>
+</body>
+</noframes> 
+</html>

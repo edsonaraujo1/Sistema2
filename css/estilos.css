@@ -1,0 +1,143 @@
+ * {
+    margin: 0;
+    padding: 0;
+    font: bold 13px Arial;
+	color: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+} .clear {
+    clear: both;
+} #menu {
+    
+    padding: 5px 0;
+} #menu ul {
+    list-style: none;
+}
+
+ul.principal {
+    width: 800px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+ul.principal li {
+    float: left;
+    margin: 0 0 0 3px;
+    text-align: center;
+    position: relative;
+    height: 20px;
+    background: transparent;
+}
+
+ul.principal li:first-child, ul.principal li#first {
+    margin-left: 0;
+}
+
+ul.principal li a {
+    color: #000;
+    display: block;
+    background: url(../Imagens/menu.png) top center;
+    padding: 4px 0 0 0;
+    width: 95px;
+    height: 20px;
+    font-weight: bold;
+}
+
+ul.principal li a:hover {
+    text-decoration: none;
+}
+
+span.hover a, ul.principal li.over a {
+
+    font: bold 13px Arial;
+	color: #FFF;
+	
+}
+*.principal *:hover a, *.principal *.over a {
+    background: url(../Imagens/menu_gray.png);
+
+    font: bold 13px Arial;
+	color: #000;
+	
+}
+
+ul.principal li.selecionado a {
+    
+}
+
+ul.principal li ul.nivel2 {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    top: 25px;
+    border: 1px solid #000;
+    border-top: none;
+    display: none;
+    width: 90px;
+}
+
+ul.principal li:hover ul.nivel2, ul.principal li.over ul.nivel2 {
+    display: block;
+}
+
+ul.principal li ul.nivel2 li {
+    margin: 0;
+    height: 25px;
+}
+
+ul.principal li ul.nivel2 li a {
+    width: 140px;
+    background: #EEE url(../Imagens/fundo_nivel2.png) top;
+    color: #000;
+    height: 20px;
+    margin: 0;
+    padding: 2px 0 2px 10px;
+    text-align: left;
+    border-top: 1px solid #000;
+    font-weight: normal;
+}
+
+ul.principal li ul.nivel2 li a.submenu {
+    background: #EEE url(../Imagens/fundo_nivel2_sub.png) top;
+}
+
+ul.principal li ul.nivel2 li:hover a, ul.principal li ul.nivel2 li.over a {
+    background: #DDD url(../Imagens/fundo_nivel2.png) bottom;
+}
+
+ul.principal li ul.nivel2 li:hover a.submenu, ul.principal li ul.nivel2 li.over a.submenu {
+    background: #DDD url(../Imagens/fundo_nivel2_sub.png) bottom;
+}
+
+ul.principal li ul.nivel2 li ul.nivel3 {
+    position: absolute;
+    left: 150px;
+    top: 0;
+    border: 1px solid #000;
+    border-top: none;
+    display: none;
+}
+
+ul.principal li ul.nivel2 li:hover ul.nivel3, ul.principal li ul.nivel2 li.over ul.nivel3 {
+    display: block;
+}
+
+ul.principal li ul.nivel2 li ul.nivel3 li {
+    height: 21px;
+}
+
+ul.principal li ul.nivel2 li ul.nivel3 li a {
+    background: #FFF url(../Imagens/fundo_nivel3.png) top;
+    font-size: 10pt;
+    height: 16px;
+}
+
+ul.principal li ul.nivel2 li ul.nivel3 li:hover a, ul.principal li ul.nivel2 li ul.nivel3 li.over a {
+    background: #CDF5FF url(../Imagens/fundo_nivel3.png) bottom;
+}
